@@ -58,7 +58,7 @@ img {
 #header ul li {
     margin: 10px;
 }
-img[src$="https://github.com/Mark-int/Idumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true"]{
+img[src$="https://github.com/Mark-int/izumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true"]{
     height: 30px;
     width: 30px;
 }
@@ -116,7 +116,109 @@ img[src$="https://github.com/Mark-int/izumo_study/blob/main/youtube.jpg?raw=true
     height: 126px;
     width: 240px;
 }
+/*Body-contact*/
 
+label {
+    cursor: default;
+}
+
+dl {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+dt {
+    display: block;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+#contact dd {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+#contact dt {
+    width: 100%;
+}
+#contact dt {
+    width: 15%;
+}
+
+#contact dd input {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+}
+
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #24292e;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: inherit;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+textarea {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #24292e;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+}
+
+textarea {
+    font: inherit;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: solid 1px #c8c8c8;
+}
+
+#contact .button input {
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+}
+
+[type=submit] {
+    cursor: pointer;
+    text-align: center;
+}
 
 /*Body-footer*/
 
