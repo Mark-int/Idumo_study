@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My study</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11034524238"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11034524238');
+</script>
+<!-- Event snippet for リードフォームの送信_test conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11034524238/li9oCKbv2IMYEM701Y0p',
+            'event_callback': callback
+        });
+        return false;
+    }
+    </script>
 </head>
 <body id="body">
     <header id="header">
@@ -22,8 +47,11 @@
                     <a href="#materials">Materials</a>
                 </li>
                 <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
                     <a href="https://www.facebook.com/Mark.int/" target="_blank" rel="noreferrer noopener">
-                        <img class="icon" src="https://github.com/Mark-int/Idumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true" alt="facebook">
+                        <img class="icon" src="https://github.com/Mark-int/izumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true" target="_blank" rel="noreferrer noopener" alt="facebook">
                     </a>
                 </li>
             </ul>
@@ -73,6 +101,35 @@
                     <img src="https://github.com/Mark-int/izumo_study/blob/main/youtube.jpg?raw=true" alt="youtube">
                 </li>
             </ul>
+        </section>
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact</h2>
+            <form action="#" method="post">
+                <dl>
+                    <dt>
+                        <label for="name">NAME</label>
+                    </dt>
+                    <dd>
+                        <input type="text" id="name" name="your-name">
+                    </dd>
+                    <dt>
+                        <label for="email">E-mail</label>
+                    </dt>
+                    <dd>
+                        <input type="email" id="email" name="your-email">
+                    </dd>
+                    <dt>
+                        <label for="message">MESSAGE</label>
+                    </dt>
+                    <dd>
+                        <textarea name="your-message" id="message"
+                        ></textarea>
+                    </dd>
+                </dl>
+                <div class="button" onclick="return gtag_report_conversion('http://example.com/your-link')">
+                    <input type="submit" value="送信">
+                </div>
+            </form>
         </section>
     </main>
     <footer id="footer">
