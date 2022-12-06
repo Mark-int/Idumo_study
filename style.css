@@ -1,4 +1,12 @@
+@charset "UTF-8";
+
 /*全体*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     font-size: 100%;
@@ -12,18 +20,12 @@ html {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: auto;
     margin: 0 auto 130px auto;
     font-size: 0.9rem;
     padding: 0 4%;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
-*, :after, :before {
-    box-sizing: inherit;
-}
+
 
 ul{
     list-style: none;
@@ -33,7 +35,8 @@ body {
     font-family: "ヒラギノ角ゴ ProN W3", "Yu Gothic", Verdana, Helvetica, Arial, sans-serif;
     font-size: 100%;
     background-color: rgba(248, 244, 244, 0.911);
-    margin:0 auto
+    margin:0 auto;
+
 }
 img {
     border-style: none;
@@ -47,13 +50,15 @@ img {
     align-items: center;
     height: 100px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 0;
 
 }
 #header ul {
     list-style: none;
     display: flex;
     padding: 10px;
+    justify-content: space-around;
+    margin-left: auto;
 }
 #header ul li {
     margin: 10px;
@@ -73,6 +78,10 @@ section {
     display: block;
 }
 
+#main img{
+    width: 99.1vw;
+}
+
 #about .content {
     display: flex;
     justify-content: center;
@@ -85,8 +94,8 @@ section {
     text-align: center;
 }
 .content img {
-    height: 150px;
     width: 150px;
+    height: 150px;
 }
 
 /* Body-Study */
@@ -117,6 +126,7 @@ img[src$="https://github.com/Mark-int/izumo_study/blob/main/youtube.jpg?raw=true
     height: 126px;
     width: 240px;
 }
+
 /*Body-contact*/
 
 label {
@@ -220,6 +230,10 @@ textarea {
     cursor: pointer;
     text-align: center;
 }
+
+
+
+
 
 /*Body-footer*/
 
