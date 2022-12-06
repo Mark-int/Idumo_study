@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My study</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11034524238"></script>
 <script>
@@ -30,37 +31,43 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         });
         return false;
     }
-    </script>
+</script>
+
 </head>
 <body id="body">
     <header id="header">
         <h1 class="site-title">My study</h1>
-        <nav>
-            <ul>
+        <nav class="menu">
+            <div class="hamburgermenu">
+                <div class="buns"></div>
+                <div class="patty"></div>
+                <div class="buns"></div>
+            </div>
+            <ul class="link">
                 <li>
-                    <a href="#about">About</a>
+                    <a class="inpage" href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#study">Study</a>
+                    <a class="inpage" href="#study">Study</a>
                 </li>
                 <li>
-                    <a href="#materials">Materials</a>
+                    <a class="inpage" href="#materials">Materials</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="inpage" href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/Mark.int/" target="_blank" rel="noreferrer noopener">
-                        <img class="icon" src="https://github.com/Mark-int/izumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true" target="_blank" rel="noreferrer noopener" alt="facebook">
+                    <a class="inpage" href="https://www.facebook.com/Mark.int/" target="_blank" rel="noreferrer noopener">
+                        <img class="icon" src="https://github.com/Mark-int/izumo_study/blob/main/FACEBOOK%E9%A2%A8%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90%20%E3%81%9D%E3%81%AE3.jpeg?raw=true" alt="facebook">
                     </a>
                 </li>
             </ul>
-        </nav
+        </nav>
     </header>
     <main>
         <div id="main">
             <picture>
-                <img src="https://github.com/Mark-int/Idumo_study/blob/main/TOPI_IMG.jpg?raw=true" alt="">
+                <img src=""https://github.com/Mark-int/izumo_study/blob/main/TOPI_IMG.jpg?raw=true" alt="">
             </picture>
         </div>
         <section id="about" class="wrapper">
@@ -104,7 +111,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </section>
         <section id="contact" class="wrapper">
             <h2 class="sec-title">Contact</h2>
-            <form action="https://ssgform.com/s/FC3LpQb20QuJ" method="POST">
+            <form action="https://ssgform.com/s/FC3LpQb20QuJ" method="post">
                 <dl>
                     <dt>
                         <label for="name">NAME</label>
@@ -126,7 +133,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         ></textarea>
                     </dd>
                 </dl>
-                <div class="button">
+                <div class="button" >
                     <input type="submit" value="送信">
                 </div>
             </form>
@@ -135,9 +142,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <footer id="footer">
         <p>© 2022 Profile</p>
     </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
